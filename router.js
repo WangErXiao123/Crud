@@ -24,6 +24,7 @@ router.get('/register', function(req, res){
     res.render('register.html')
 })
 
+// 注册页面改成异步操作
 router.post('/register', async function (req, res) {
   var body = req.body
   try {
